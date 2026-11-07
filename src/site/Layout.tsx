@@ -6,8 +6,8 @@ import { isClientPreview, isPreview, site } from "./config";
 import { hasDraft, useAvailability } from "./availability";
 
 const NAV = [
-  { href: "/auto", label: "Auto" },
   { href: "/home-insurance", label: "Home" },
+  { href: "/auto", label: "Auto" },
   { href: "/business", label: "Business" },
   { href: "/life", label: "Life" },
   { href: "/health", label: "Health & Medicare" },
@@ -75,8 +75,8 @@ function Footer() {
         <div>
           <h4>Coverage</h4>
           <ul>
-            <li><Link href="/auto">Auto insurance</Link></li>
             <li><Link href="/home-insurance">Home, renters &amp; condo</Link></li>
+            <li><Link href="/auto">Auto insurance</Link></li>
             <li><Link href="/business">Business insurance</Link></li>
             <li><Link href="/life">Life &amp; final expense</Link></li>
             <li><Link href="/health">Health &amp; Medicare</Link></li>
