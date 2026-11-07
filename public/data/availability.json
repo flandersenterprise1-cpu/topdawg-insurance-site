@@ -1,0 +1,407 @@
+{
+ "_readme": "Public availability by state and line. Values: 'verified' = shown on the live site; 'draft' = shown only while showDraft is true (preview); 'off' = never shown. To change availability, edit this file only \u2014 no code changes needed. Set showDraft to false before launch.",
+ "showDraft": false,
+ "updated": "2026-11-07",
+ "approvedBy": "Client, Nov 7 2026 (P&C, Life, Health footprints and P&C lines)",
+ "lines": {
+  "life": {
+   "label": "Life & Final Expense",
+   "team": "life-health"
+  },
+  "health": {
+   "label": "Health & Medicare",
+   "team": "life-health"
+  },
+  "pc": {
+   "label": "Auto, Home & Business",
+   "team": "pc"
+  }
+ },
+ "states": {
+  "AL": {
+   "name": "Alabama",
+   "life": "off",
+   "health": "off",
+   "pc": "verified"
+  },
+  "AK": {
+   "name": "Alaska",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "AZ": {
+   "name": "Arizona",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "AR": {
+   "name": "Arkansas",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "CA": {
+   "name": "California",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "CO": {
+   "name": "Colorado",
+   "life": "off",
+   "health": "verified",
+   "pc": "off"
+  },
+  "CT": {
+   "name": "Connecticut",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "DE": {
+   "name": "Delaware",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "DC": {
+   "name": "District of Columbia",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "FL": {
+   "name": "Florida",
+   "life": "off",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "GA": {
+   "name": "Georgia",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "HI": {
+   "name": "Hawaii",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "ID": {
+   "name": "Idaho",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "IL": {
+   "name": "Illinois",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "IN": {
+   "name": "Indiana",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "IA": {
+   "name": "Iowa",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "KS": {
+   "name": "Kansas",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "KY": {
+   "name": "Kentucky",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "LA": {
+   "name": "Louisiana",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "ME": {
+   "name": "Maine",
+   "life": "verified",
+   "health": "off",
+   "pc": "off"
+  },
+  "MD": {
+   "name": "Maryland",
+   "life": "verified",
+   "health": "off",
+   "pc": "off"
+  },
+  "MA": {
+   "name": "Massachusetts",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "MI": {
+   "name": "Michigan",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "MN": {
+   "name": "Minnesota",
+   "life": "verified",
+   "health": "off",
+   "pc": "off"
+  },
+  "MS": {
+   "name": "Mississippi",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "MO": {
+   "name": "Missouri",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "MT": {
+   "name": "Montana",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "NE": {
+   "name": "Nebraska",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "NV": {
+   "name": "Nevada",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "NH": {
+   "name": "New Hampshire",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "NJ": {
+   "name": "New Jersey",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "NM": {
+   "name": "New Mexico",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "NY": {
+   "name": "New York",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "NC": {
+   "name": "North Carolina",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "ND": {
+   "name": "North Dakota",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "OH": {
+   "name": "Ohio",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "OK": {
+   "name": "Oklahoma",
+   "life": "off",
+   "health": "off",
+   "pc": "verified"
+  },
+  "OR": {
+   "name": "Oregon",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "PA": {
+   "name": "Pennsylvania",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "RI": {
+   "name": "Rhode Island",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "SC": {
+   "name": "South Carolina",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "SD": {
+   "name": "South Dakota",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "TN": {
+   "name": "Tennessee",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "TX": {
+   "name": "Texas",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "UT": {
+   "name": "Utah",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "VT": {
+   "name": "Vermont",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  },
+  "VA": {
+   "name": "Virginia",
+   "life": "verified",
+   "health": "verified",
+   "pc": "off"
+  },
+  "WA": {
+   "name": "Washington",
+   "life": "verified",
+   "health": "off",
+   "pc": "off"
+  },
+  "WV": {
+   "name": "West Virginia",
+   "life": "verified",
+   "health": "off",
+   "pc": "off"
+  },
+  "WI": {
+   "name": "Wisconsin",
+   "life": "verified",
+   "health": "verified",
+   "pc": "verified"
+  },
+  "WY": {
+   "name": "Wyoming",
+   "life": "off",
+   "health": "off",
+   "pc": "off"
+  }
+ },
+ "_products_readme": "Products written only in some states. Each appears on the site only where marked here. All client-confirmed Nov 7 for the full P&C footprint.",
+ "products": {
+  "builders-risk": {
+   "label": "Builder\u2019s risk",
+   "states": {
+    "CA": "verified",
+    "AL": "verified",
+    "AR": "verified",
+    "AZ": "verified",
+    "FL": "verified",
+    "GA": "verified",
+    "IL": "verified",
+    "IN": "verified",
+    "KS": "verified",
+    "OH": "verified",
+    "OK": "verified",
+    "TN": "verified",
+    "TX": "verified",
+    "WI": "verified"
+   }
+  },
+  "food-truck": {
+   "label": "Food truck & trailer",
+   "states": {
+    "CA": "verified",
+    "AL": "verified",
+    "AR": "verified",
+    "AZ": "verified",
+    "FL": "verified",
+    "GA": "verified",
+    "IL": "verified",
+    "IN": "verified",
+    "KS": "verified",
+    "OH": "verified",
+    "OK": "verified",
+    "TN": "verified",
+    "TX": "verified",
+    "WI": "verified"
+   }
+  },
+  "commercial-auto": {
+   "label": "Commercial auto & fleet",
+   "states": {
+    "CA": "verified",
+    "AL": "verified",
+    "AR": "verified",
+    "AZ": "verified",
+    "FL": "verified",
+    "GA": "verified",
+    "IL": "verified",
+    "IN": "verified",
+    "KS": "verified",
+    "OH": "verified",
+    "OK": "verified",
+    "TN": "verified",
+    "TX": "verified",
+    "WI": "verified"
+   }
+  },
+  "renters": {
+   "label": "Renters & condo",
+   "states": {
+    "AL": "verified",
+    "AZ": "verified",
+    "AR": "verified",
+    "CA": "verified",
+    "FL": "verified",
+    "GA": "verified",
+    "IL": "verified",
+    "IN": "verified",
+    "KS": "verified",
+    "OH": "verified",
+    "OK": "verified",
+    "TN": "verified",
+    "TX": "verified",
+    "WI": "verified"
+   }
+  }
+ }
+}
