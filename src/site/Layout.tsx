@@ -6,6 +6,7 @@ import { isClientPreview, isPreview, site } from "./config";
 import { hasDraft, useAvailability } from "./availability";
 
 const NAV = [
+  { href: "/", label: "Main" },
   { href: "/home-insurance", label: "Home" },
   { href: "/auto", label: "Auto" },
   { href: "/business", label: "Business" },
@@ -26,7 +27,7 @@ function Header() {
         <Brand />
         <nav className="nav" aria-label="Main">
           {NAV.map((n) => (
-            <Link key={n.href} href={n.href} aria-current={loc.startsWith(n.href) ? "page" : undefined}>
+            <Link key={n.href} href={n.href} aria-current={(n.href === "/" ? loc === "/" : loc.startsWith(n.href)) ? "page" : undefined}>
               {n.label}
             </Link>
           ))}

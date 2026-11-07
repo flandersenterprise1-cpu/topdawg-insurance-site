@@ -738,3 +738,6 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .lic-grid dd { margin: 0; font-weight: 700; font-size: 1.05rem; }
 @container site (min-width: 760px) { .lic-grid { grid-template-columns: repeat(2, 1fr); } }
 .ftr-lic-link { color: var(--gold-soft); text-decoration: underline; text-underline-offset: 3px; }
+
+/* nine menu items: tighten slightly on narrower desktops */
+@container site (min-width: 1040px) and (max-width: 1239px) { .nav { gap: 13px; } .nav a { font-size: 0.84rem; } .hdr .brand-word b { font-size: 1.25rem; } }
