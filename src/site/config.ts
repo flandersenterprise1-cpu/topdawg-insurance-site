@@ -28,16 +28,16 @@ export const site = {
    * California license (client-confirmed Nov 7): Lindsay's CA Property & Casualty license.
    * `holderOnRecord` must match the licensee name exactly as it appears on the CDI record.
    */
+  /** Shared licensing details (issuer and public lookup). */
   license: {
-    verified: true,
-    number: "4249694",
-    holder: "Lindsay Sammons" as string | null,
-    holderOnRecordConfirmed: true,
-    type: "Property & Casualty" as string | null,
-    jurisdiction: "California" as string | null,
     issuer: "California Department of Insurance",
     lookupUrl: "https://cdicloud.insurance.ca.gov/cal/LicenseNumberSearch",
   },
+  /** Individual licenses, exactly as on the CDI record (client-confirmed Nov 7–8). */
+  licenses: [
+    { holder: "Lindsay Sammons", jurisdiction: "California", type: "Property & Casualty", number: "4249694" },
+    { holder: "Malysha Flanders", jurisdiction: "California", type: "Property & Casualty", number: "4249821" },
+  ],
   /**
    * Medicare: 6 organizations represented.
    * The website uses CMS's generic TPMO disclaimer, which needs no plan count

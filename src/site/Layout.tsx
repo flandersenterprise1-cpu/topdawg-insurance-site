@@ -65,7 +65,6 @@ function Header() {
 }
 
 function Footer() {
-  const lic = site.license;
   return (
     <footer className="ftr on-dark">
       <div className="wrap ftr-top">
@@ -108,10 +107,13 @@ function Footer() {
           {" · "}
           {site.legalName}, dba {site.dba}
           {" · "}
-          <b>{lic.holder}</b>, {lic.jurisdiction} {lic.type} License No. {lic.number}
-          {" · "}
+          {site.licenses.map((l) => (
+            <span key={l.number}>
+              <b>{l.holder}</b>, {l.jurisdiction} {l.type} License No. {l.number}
+              {" · "}
+            </span>
+          ))}
           <Link href="/licensing" className="ftr-lic-link">Licensing information</Link>
-          {!lic.holderOnRecordConfirmed && <> <Tbc>confirm the licensee name exactly as on the CDI record</Tbc></>}
         </p>
         <p>
           Insurance products are offered only in states where the agency and its producers are licensed and appointed. Not every product

@@ -240,7 +240,7 @@ export function Licensing() {
   const healthStates = statesFor(a, "health");
   useMeta(
     "Licensing Information | Top Dawg Financial",
-    `${site.brand} is operated by ${site.legalName}, dba ${site.dba}. ${lic.holder}, ${lic.jurisdiction} ${lic.type} License No. ${lic.number}.`,
+    `${site.brand} is operated by ${site.legalName}, dba ${site.dba}. ${site.licenses.map((l) => `${l.holder}, ${l.jurisdiction} ${l.type} License No. ${l.number}`).join("; ")}.`,
   );
   return (
     <>
@@ -251,17 +251,23 @@ export function Licensing() {
             <div><dt>Business name</dt><dd>{site.brand}</dd></div>
             <div><dt>Registered DBA</dt><dd>{site.dba}</dd></div>
             <div><dt>Legal entity</dt><dd>{site.legalName}, doing business as {site.dba}</dd></div>
-            <div>
-              <dt>Licensee</dt>
-              <dd>{lic.holder}{!lic.holderOnRecordConfirmed && <> <Tbc>confirm exact name on CDI record</Tbc></>}</dd>
-            </div>
-            <div><dt>License</dt><dd>{lic.jurisdiction} {lic.type}</dd></div>
-            <div><dt>License number</dt><dd className="tabular">{lic.number}</dd></div>
             <div><dt>Issued by</dt><dd>{lic.issuer}</dd></div>
           </dl>
+          <div className="stack-sm">
+            <h2 className="h3">Licensed producers</h2>
+            <dl className="lic-grid">
+              {site.licenses.map((l) => (
+                <div key={l.number}>
+                  <dt>{l.holder}</dt>
+                  <dd>{l.jurisdiction} {l.type} · License No. <span className="tabular">{l.number}</span></dd>
+                </div>
+              ))}
+            </dl>
+          </div>
           <p className="prose" style={{ margin: 0 }}>
-            You can check this license on the California Department of Insurance website:{" "}
-            <a href={lic.lookupUrl} target="_blank" rel="noopener noreferrer">CDI license search</a>. Enter license number {lic.number}.
+            You can check these licenses on the California Department of Insurance website:{" "}
+            <a href={lic.lookupUrl} target="_blank" rel="noopener noreferrer">CDI license search</a>. Enter license number{" "}
+            {site.licenses.map((l) => l.number).join(" or ")}.
           </p>
           {pc.length > 0 && (
             <div className="stack-sm">
