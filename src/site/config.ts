@@ -5,10 +5,12 @@
    ============================================================ */
 
 export const site = {
-  brand: "Top Dawg Insurance",
+  /** Public brand (client decision Nov 7). */
+  brand: "Top Dawg Financial",
   /** DBA confirmed Nov 7. */
+  /** DBA exactly as registered on the CDI record. Used in legal disclosures only. */
   dba: "Top Dawg Insurance",
-  /** Legal entity (client-confirmed Nov 7). Top Dawg Insurance stays the public brand. */
+  /** Legal entity (client-confirmed Nov 7). */
   legalName: "Flanders Enterprise LLC" as string | null,
   domain: "topdawgfinancial.com",
   email: "info@topdawgfinancial.com",

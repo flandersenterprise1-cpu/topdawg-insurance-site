@@ -99,7 +99,7 @@ function CoveragePage(props: {
 export function Personal() {
   return (
     <CoveragePage
-      meta={["Auto, Home & Renters Insurance | Top Dawg Insurance", "Compare auto, homeowners, condo and renters insurance through Top Dawg Insurance, an independent family-run agency. Request a quote in your state."]}
+      meta={["Auto, Home & Renters Insurance | Top Dawg Financial", "Compare auto, homeowners, condo and renters insurance through Top Dawg Financial, an independent family-run agency. Request a quote in your state."]}
       crumb="Auto & Home"
       eyebrow="Personal insurance"
       title={<>The car in the driveway. <em className="accent">The home behind it.</em></>}
@@ -123,7 +123,7 @@ export function Personal() {
 export function Auto() {
   return (
     <CoveragePage
-      meta={["Auto Insurance | Top Dawg Insurance", "Personal auto insurance through Top Dawg Insurance, an independent family-run agency. Compare carriers we’re appointed with and request a quote in your state."]}
+      meta={["Auto Insurance | Top Dawg Financial", "Personal auto insurance through Top Dawg Financial, an independent family-run agency. Compare carriers we’re appointed with and request a quote in your state."]}
       crumb="Auto insurance"
       eyebrow="Auto insurance"
       title={<>The car in the driveway, <em className="accent">covered the right way.</em></>}
@@ -146,7 +146,7 @@ export function Auto() {
 export function HomeInsurance() {
   return (
     <CoveragePage
-      meta={["Home, Renters & Condo Insurance | Top Dawg Insurance", "Homeowners, renters and condo insurance through Top Dawg Insurance, an independent family-run agency. Request a quote in your state."]}
+      meta={["Home, Renters & Condo Insurance | Top Dawg Financial", "Homeowners, renters and condo insurance through Top Dawg Financial, an independent family-run agency. Request a quote in your state."]}
       crumb="Home insurance"
       eyebrow="Home insurance"
       title={<>The home you’ve built, <em className="accent">protected.</em></>}
@@ -169,7 +169,7 @@ export function HomeInsurance() {
 export function Business() {
   return (
     <CoveragePage
-      meta={["Business Insurance: General Liability, BOP & Workers’ Comp | Top Dawg Insurance", "Commercial insurance for small and growing businesses: general liability, business owner’s policies, workers’ compensation and more from Top Dawg Insurance."]}
+      meta={["Business Insurance: General Liability, BOP & Workers’ Comp | Top Dawg Financial", "Commercial insurance for small and growing businesses: general liability, business owner’s policies, workers’ compensation and more from Top Dawg Financial."]}
       crumb="Business"
       eyebrow="Business insurance"
       title={<>You built the business. <em className="accent">We’ll help you protect it.</em></>}
@@ -198,7 +198,7 @@ export function Business() {
 export function Life() {
   return (
     <CoveragePage
-      meta={["Life Insurance & Final Expense | Top Dawg Insurance", "Term life, whole life and final expense insurance from Top Dawg Insurance. Talk with a licensed agent about protecting your family."]}
+      meta={["Life Insurance & Final Expense | Top Dawg Financial", "Term life, whole life and final expense insurance from Top Dawg Financial. Talk with a licensed agent about protecting your family."]}
       crumb="Life"
       eyebrow="Life insurance & final expense"
       title={<>For the people <em className="accent">who count on you.</em></>}
@@ -221,7 +221,7 @@ export function Life() {
 export function Health() {
   return (
     <CoveragePage
-      meta={["Health Insurance & Medicare Help | Top Dawg Insurance", "Medicare guidance, individual and family health insurance, and supplemental coverage from licensed agents at Top Dawg Insurance."]}
+      meta={["Health Insurance & Medicare Help | Top Dawg Financial", "Medicare guidance, individual and family health insurance, and supplemental coverage from licensed agents at Top Dawg Financial."]}
       crumb="Health & Medicare"
       eyebrow="Health insurance & Medicare"
       title={<>Medicare, made clear. <em className="accent">Health coverage before 65, too.</em></>}

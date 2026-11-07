@@ -46,12 +46,12 @@ export function Crest({ className = "crest" }: { className?: string }) {
 
 export function Brand() {
   return (
-    <Link href="/" className="brand" aria-label="Top Dawg Insurance home">
+    <Link href="/" className="brand" aria-label="Top Dawg Financial home">
       <Crest />
       <span className="brand-div" aria-hidden="true" />
       <span className="brand-word">
         <b>TOP DAWG</b>
-        <span>Insurance</span>
+        <span>Financial</span>
       </span>
     </Link>
   );

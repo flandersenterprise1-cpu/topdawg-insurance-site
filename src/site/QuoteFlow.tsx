@@ -25,7 +25,7 @@ export const PRODUCTS: { id: string; line: LineId; label: string; hint: string; 
 ];
 
 export const CONSENT_TEXT =
-  "By checking this box, I agree that Top Dawg Insurance and its licensed agents may contact me at the phone number and email I provided about the coverage I requested, including by calls and text messages that may use automated technology or prerecorded voice. Consent is not a condition of purchase. Message and data rates may apply. I can opt out at any time by replying STOP or telling an agent.";
+  "By checking this box, I agree that Top Dawg Financial and its licensed agents may contact me at the phone number and email I provided about the coverage I requested, including by calls and text messages that may use automated technology or prerecorded voice. Consent is not a condition of purchase. Message and data rates may apply. I can opt out at any time by replying STOP or telling an agent.";
 
 type Step = 1 | 2 | 3 | 4;
 
@@ -52,7 +52,7 @@ async function deliver(payload: Record<string, unknown>): Promise<"sent" | "prev
         body: JSON.stringify({
           access_key: delivery.web3formsKey,
           subject: `Quote request · ${payload.product_label} · ${payload.state} · ${team.label}`,
-          from_name: "Top Dawg Insurance website",
+          from_name: "Top Dawg Financial website",
           ...payload,
         }),
       })
@@ -368,7 +368,7 @@ export default function QuoteFlow() {
       <aside className="decl" aria-label="Your request summary">
         <div className="decl-head">
           <b>Request summary</b>
-          <span>{result ? String(result.payload.lead_id) : "Top Dawg Insurance"}</span>
+          <span>{result ? String(result.payload.lead_id) : "Top Dawg Financial"}</span>
         </div>
         <dl className="decl-rows" style={{ margin: 0 }}>
           {(

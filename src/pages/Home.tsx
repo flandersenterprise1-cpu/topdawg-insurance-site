@@ -44,7 +44,7 @@ export const HOME_FAQ = [
     q: "Are you an insurance company?",
     a: (
       <p>
-        No. Top Dawg Insurance is an independent agency. We’re licensed to sell insurance and appointed with several carriers, so we can
+        No. Top Dawg Financial is an independent agency. We’re licensed to sell insurance and appointed with several carriers, so we can
         compare options for you. Your policy is issued by the carrier you choose, and claims are paid by that carrier.
       </p>
     ),
@@ -98,8 +98,8 @@ export const HOME_FAQ = [
 
 export default function Home() {
   useMeta(
-    "Top Dawg Insurance | Protect Your Assets. Build Your Legacy.",
-    "Top Dawg Insurance is an independent, family-run agency helping households and businesses with auto, home, business, life, health and Medicare coverage in the states where we’re licensed.",
+    "Top Dawg Financial | Protect Your Assets. Build Your Legacy.",
+    "Top Dawg Financial is an independent, family-run agency helping households and businesses with auto, home, business, life, health and Medicare coverage in the states where we’re licensed.",
   );
   return (
     <>
@@ -120,7 +120,7 @@ function SignatureTop() {
               src={family}
               srcSet={`${familySm} 880w, ${family} 1320w`}
               sizes="(min-width: 900px) 50vw, 52vw"
-              alt="Malysha and Lindsay, founders of Top Dawg Insurance, with their three Cane Corsos"
+              alt="Malysha and Lindsay, founders of Top Dawg Financial, with their three Cane Corsos"
               width={1320}
               height={1388}
               fetchPriority="high"

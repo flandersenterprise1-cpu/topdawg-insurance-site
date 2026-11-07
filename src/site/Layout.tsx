@@ -104,8 +104,9 @@ function Footer() {
       </div>
       <div className="wrap ftr-legal">
         <p>
-          <b>{site.dba}</b>
-          {site.legalName && <> is a DBA of {site.legalName}</>}
+          <b>{site.brand}</b>
+          {" · "}
+          {site.legalName}, dba {site.dba}
           {" · "}
           <b>{lic.holder}</b>, {lic.jurisdiction} {lic.type} License No. {lic.number}
           {" · "}
@@ -117,7 +118,7 @@ function Footer() {
           is available in every state. Coverage is subject to each carrier’s underwriting, policy terms, conditions and exclusions. A quote
           request does not bind or change coverage; coverage starts only when a carrier confirms it in writing.
         </p>
-        <p>© {new Date().getFullYear()} {site.legalName}, dba {site.dba}. Top Dawg. Top Tier.</p>
+        <p>© {new Date().getFullYear()} {site.brand}. {site.legalName}, dba {site.dba}. Top Dawg. Top Tier.</p>
       </div>
     </footer>
   );

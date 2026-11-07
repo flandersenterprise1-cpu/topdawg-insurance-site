@@ -10,8 +10,8 @@ import { isPreview, routing, site } from "@/site/config";
 /* ============================== ABOUT ============================== */
 export function About() {
   useMeta(
-    "Meet the Family Behind Top Dawg Insurance | Malysha & Lindsay Flanders",
-    "Top Dawg Insurance is a family-run independent agency founded by Malysha and Lindsay Flanders. Meet the people behind the agency.",
+    "Meet the Family Behind Top Dawg Financial | Malysha & Lindsay Flanders",
+    "Top Dawg Financial is a family-run independent agency founded by Malysha and Lindsay Flanders. Meet the people behind the agency.",
   );
   return (
     <>
@@ -66,8 +66,8 @@ export function About() {
 export function States() {
   const a = useAvailability();
   useMeta(
-    "States We Serve | Top Dawg Insurance",
-    "See which states Top Dawg Insurance serves for auto, home and business, life and final expense, and health and Medicare coverage.",
+    "States We Serve | Top Dawg Financial",
+    "See which states Top Dawg Financial serves for auto, home and business, life and final expense, and health and Medicare coverage.",
   );
   const served = statesFor(a);
   return (
@@ -117,8 +117,8 @@ export function StateDetail() {
   const s = a.states[C];
   const lines = s ? linesIn(a, C) : [];
   useMeta(
-    s ? `Insurance in ${s.name} | Top Dawg Insurance` : "State not found | Top Dawg Insurance",
-    s ? `Coverage Top Dawg Insurance can help with in ${s.name}: ${lines.map((l) => LINE_COPY[l].short).join(", ") || "none at this time"}.` : "",
+    s ? `Insurance in ${s.name} | Top Dawg Financial` : "State not found | Top Dawg Financial",
+    s ? `Coverage Top Dawg Financial can help with in ${s.name}: ${lines.map((l) => LINE_COPY[l].short).join(", ") || "none at this time"}.` : "",
   );
   if (!s) return <NotFound />;
   return (
@@ -169,8 +169,8 @@ export function StateDetail() {
 /* ============================== CONTACT ============================== */
 export function Contact() {
   useMeta(
-    "Contact Top Dawg Insurance | Customer Service",
-    "Contact Top Dawg Insurance for a quote, a policy change, billing help or help reporting a claim.",
+    "Contact Top Dawg Financial | Customer Service",
+    "Contact Top Dawg Financial for a quote, a policy change, billing help or help reporting a claim.",
   );
   return (
     <>
@@ -220,7 +220,7 @@ export function Contact() {
 
 /* ============================== QUOTE ============================== */
 export function Quote() {
-  useMeta("Request a Quote | Top Dawg Insurance", "Request an insurance quote from Top Dawg Insurance. Start with your state or ZIP code and a licensed agent will follow up.");
+  useMeta("Request a Quote | Top Dawg Financial", "Request an insurance quote from Top Dawg Financial. Start with your state or ZIP code and a licensed agent will follow up.");
   return (
     <>
       <PageHero eyebrow="Quote request" crumb="Get a quote" title={<>Let’s find the right coverage.</>} lede="Three short steps. A licensed agent follows up with real options from carriers we’re appointed with in your state." />
@@ -239,8 +239,8 @@ export function Licensing() {
   const lifeStates = statesFor(a, "life");
   const healthStates = statesFor(a, "health");
   useMeta(
-    "Licensing Information | Top Dawg Insurance",
-    `Top Dawg Insurance is a DBA of ${site.legalName}. ${lic.holder}, ${lic.jurisdiction} ${lic.type} License No. ${lic.number}.`,
+    "Licensing Information | Top Dawg Financial",
+    `${site.brand} is operated by ${site.legalName}, dba ${site.dba}. ${lic.holder}, ${lic.jurisdiction} ${lic.type} License No. ${lic.number}.`,
   );
   return (
     <>
@@ -248,7 +248,8 @@ export function Licensing() {
       <section className="sec">
         <div className="wrap stack">
           <dl className="lic-grid">
-            <div><dt>Business name</dt><dd>{site.dba}</dd></div>
+            <div><dt>Business name</dt><dd>{site.brand}</dd></div>
+            <div><dt>Registered DBA</dt><dd>{site.dba}</dd></div>
             <div><dt>Legal entity</dt><dd>{site.legalName}, doing business as {site.dba}</dd></div>
             <div>
               <dt>Licensee</dt>
@@ -292,7 +293,7 @@ export function Licensing() {
 
 /* ============================== PRIVACY ============================== */
 export function Privacy() {
-  useMeta("Privacy Notice | Top Dawg Insurance", "How Top Dawg Insurance collects and uses information submitted through this website.");
+  useMeta("Privacy Notice | Top Dawg Financial", "How Top Dawg Financial collects and uses information submitted through this website.");
   return (
     <>
       <PageHero eyebrow="Legal" crumb="Privacy" title="Privacy notice" />
@@ -311,7 +312,7 @@ export function Privacy() {
 }
 
 export function NotFound() {
-  useMeta("Page not found | Top Dawg Insurance", "");
+  useMeta("Page not found | Top Dawg Financial", "");
   return (
     <PageHero eyebrow="404" title="We couldn’t find that page." lede="It may have moved. Start from the home page or check your state.">
       <div className="btn-row">
