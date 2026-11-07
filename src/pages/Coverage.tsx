@@ -119,6 +119,52 @@ export function Personal() {
   );
 }
 
+/* ============================== AUTO ============================== */
+export function Auto() {
+  return (
+    <CoveragePage
+      meta={["Auto Insurance | Top Dawg Insurance", "Personal auto insurance through Top Dawg Insurance, an independent family-run agency. Compare carriers we’re appointed with and request a quote in your state."]}
+      crumb="Auto"
+      eyebrow="Auto insurance"
+      title={<>The car in the driveway, <em className="accent">covered the right way.</em></>}
+      lede="Coverage for the vehicles and drivers in your household, shopped across the carriers we’re appointed with in your state."
+      line="pc"
+      products={[
+        { id: "auto", icon: Car, name: "Auto", quote: "auto", body: "Coverage for the vehicles and drivers in your household. We look at the limits you actually need, not just the state minimum.", covers: ["Liability for injuries and damage you cause to others", "Collision and comprehensive for your own vehicle", "Uninsured and underinsured motorist protection", "Options like roadside help and rental reimbursement, where offered"] },
+      ]}
+      faq={[
+        { q: "What do you need from me for an auto quote?", a: <p>Each driver’s name, date of birth and license number, plus each vehicle’s year, make, model or VIN. Your current declarations page helps us compare like for like.</p> },
+        { q: "Is the state minimum enough?", a: <p>Often not. State minimums can be far below the cost of a serious accident. Your agent will walk through limits that fit what you own and what you drive.</p> },
+        { q: "Will switching cost me anything?", a: <p>Some carriers charge a cancellation fee or keep a short-rate portion of the premium. Keep your current policy until the new one is confirmed, and we’ll help you time the change.</p> },
+        { q: "Do you insure vehicles used for work?", a: <p>Yes. Vehicles used for a business are usually covered under commercial auto. See our <Link href="/business">business insurance</Link> page.</p> },
+      ]}
+    />
+  );
+}
+
+/* ============================== HOME ============================== */
+export function HomeInsurance() {
+  return (
+    <CoveragePage
+      meta={["Home, Renters & Condo Insurance | Top Dawg Insurance", "Homeowners, renters and condo insurance through Top Dawg Insurance, an independent family-run agency. Request a quote in your state."]}
+      crumb="Home"
+      eyebrow="Home insurance"
+      title={<>The home you’ve built, <em className="accent">protected.</em></>}
+      lede="Homeowners, renters and condo coverage, shopped across the carriers we’re appointed with in your state."
+      line="pc"
+      products={[
+        { id: "home", icon: HomeIcon, name: "Homeowners", quote: "home", body: "Protection for the house, your belongings and your liability. We’ll talk through replacement cost, deductibles and what your area’s risks mean for coverage.", covers: ["The structure and other buildings on the property", "Personal belongings, at home and away", "Personal liability if someone is hurt on your property", "Extra living costs if a covered loss forces you out"] },
+        { id: "renters", icon: KeyRound, name: "Renters & Condo", quote: "renters", body: "Your landlord’s or association’s policy doesn’t cover your things. Renters and condo policies do, usually for less than people expect.", covers: ["Your furniture, electronics and clothing", "Personal liability", "Improvements you made to a condo unit", "Temporary housing after a covered loss"] },
+      ]}
+      faq={[
+        { q: "What do you need from me for a home quote?", a: <p>The property address, year built, square footage, roof age and any updates to plumbing, wiring or heating. Your current declarations page helps us compare like for like.</p> },
+        { q: "Are flood and earthquake included in a homeowners policy?", a: <p>Usually not. They’re typically separate policies or endorsements. Ask your agent what’s available for your address.</p> },
+        { q: "Do I need renters insurance if my landlord has insurance?", a: <p>Yes. The landlord’s policy covers the building, not your belongings or your personal liability.</p> },
+      ]}
+    />
+  );
+}
+
 /* ============================== BUSINESS ============================== */
 export function Business() {
   return (

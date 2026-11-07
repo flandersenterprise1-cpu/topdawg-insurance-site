@@ -4,7 +4,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import Layout from "./site/Layout";
 import { isPreview } from "./site/config";
 import Home from "./pages/Home";
-import { Business, Health, Life, Personal } from "./pages/Coverage";
+import { Auto, Business, Health, HomeInsurance, Life, Personal } from "./pages/Coverage";
 import { About, Contact, Licensing, NotFound, Privacy, Quote, StateDetail, States } from "./pages/Pages";
 
 
@@ -14,6 +14,8 @@ function Routes() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/personal" component={Personal} />
+        <Route path="/auto" component={Auto} />
+        <Route path="/home-insurance" component={HomeInsurance} />
         <Route path="/business" component={Business} />
         <Route path="/life" component={Life} />
         <Route path="/health" component={Health} />
