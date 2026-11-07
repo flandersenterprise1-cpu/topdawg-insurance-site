@@ -119,7 +119,7 @@ export function PageHero({ eyebrow, title, lede, crumb, children }: { eyebrow: s
       <div className="wrap">
         {crumb && (
           <nav className="crumbs" aria-label="Breadcrumb">
-            <Link href="/">Home</Link> / {crumb}
+            <Link href="/">Main</Link> / {crumb}
           </nav>
         )}
         <span className="eyebrow">{eyebrow}</span>

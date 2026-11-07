@@ -124,7 +124,7 @@ export function Auto() {
   return (
     <CoveragePage
       meta={["Auto Insurance | Top Dawg Insurance", "Personal auto insurance through Top Dawg Insurance, an independent family-run agency. Compare carriers we’re appointed with and request a quote in your state."]}
-      crumb="Auto"
+      crumb="Auto insurance"
       eyebrow="Auto insurance"
       title={<>The car in the driveway, <em className="accent">covered the right way.</em></>}
       lede="Coverage for the vehicles and drivers in your household, shopped across the carriers we’re appointed with in your state."
@@ -147,7 +147,7 @@ export function HomeInsurance() {
   return (
     <CoveragePage
       meta={["Home, Renters & Condo Insurance | Top Dawg Insurance", "Homeowners, renters and condo insurance through Top Dawg Insurance, an independent family-run agency. Request a quote in your state."]}
-      crumb="Home"
+      crumb="Home insurance"
       eyebrow="Home insurance"
       title={<>The home you’ve built, <em className="accent">protected.</em></>}
       lede="Homeowners, renters and condo coverage, shopped across the carriers we’re appointed with in your state."
