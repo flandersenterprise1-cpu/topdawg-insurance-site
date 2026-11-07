@@ -741,3 +741,19 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 /* nine menu items: tighten slightly on narrower desktops */
 @container site (min-width: 1040px) and (max-width: 1239px) { .nav { gap: 13px; } .nav a { font-size: 0.84rem; } .hdr .brand-word b { font-size: 1.25rem; } }
+
+/* phone hero: stack headline → full-width photo → buttons (client feedback Nov 7) */
+@container site (max-width: 639px) {
+  .mhero-grid { grid-template-columns: 1fr; gap: 0; padding-left: 0; padding-right: 0; }
+  .mhero-copy { display: contents; }
+  .mhero-title, .mhero-swash, .mhero-sub, .mhero-btns {
+    padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+  .mhero-title { order: 1; padding-top: 28px; font-size: clamp(2.1rem, 10.5cqi, 2.9rem); }
+  .mhero-swash { order: 2; margin: 8px max(20px, env(safe-area-inset-left, 0px)) 0; width: 60%; padding: 0; box-sizing: border-box; }
+  .mhero-sub { order: 3; padding-top: 14px; font-size: 1.02rem; max-width: none; }
+  .mhero-photo { order: 4; margin-top: 18px; align-self: stretch; }
+  .mhero-photo img { width: 100%; height: auto; -webkit-mask-image: linear-gradient(180deg, #000 88%, transparent 100%); mask-image: linear-gradient(180deg, #000 88%, transparent 100%); }
+  .mhero-btns { order: 5; padding-top: 4px; padding-bottom: 26px; }
+  .mhero-btns .btn { font-size: 0.95rem; min-height: 50px; }
+}
